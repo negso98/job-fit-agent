@@ -20,7 +20,7 @@ from bs4 import BeautifulSoup
 from groq import Groq
 
 
-MODEL_NAME = "llama-3.3-70b-versatile"
+MODEL_NAME = "qwen/qwen3.6-27b"
 
 
 def fetch_job_posting_text(url: str) -> str:
