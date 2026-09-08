@@ -140,7 +140,9 @@ def analyze_fit(job_posting_text: str, candidate_profile: str) -> str:
           {"role": "system", "content": SYSTEM_INSTRUCTION},
           {"role": "user", "content": user_prompt},
       ],
-      temperature=0.4,
+      max_tokens=900,
+      reasoning_effort="none",
+      temperature=0.7,
   )
 
   return response.choices[0].message.content
